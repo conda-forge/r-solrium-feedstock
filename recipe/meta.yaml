@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: generic
-  number: 1000
+  number: 1001
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
@@ -52,5 +52,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - dpryan79
     - ocefpaf
