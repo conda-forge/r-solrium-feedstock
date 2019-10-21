@@ -1,13 +1,13 @@
 About r-solrium
 ===============
 
-Home: https://cran.r-project.org/web/packages/solrium
+Home: https://github.com/ropensci/solrium (devel), https://docs.ropensci.org/solrium/ (user manual)
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Provides a set of functions for querying and parsing data from 'Solr'
+Summary: Provides a set of functions for querying and parsing data from 'Solr' (<https://lucene.apache.org/solr>) 'endpoints' (local and remote), including search, 'faceting', 'highlighting', 'stats', and 'more like this'. In addition, some functionality is included for creating, deleting, and updating documents in a 'Solr' 'database'.
 
 
 
