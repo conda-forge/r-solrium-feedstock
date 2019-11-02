@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/solrium_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/solrium/solrium_{{ version }}.tar.gz
-  sha256: 21bea8a5b4bd43d98c6cbe3d52103182acac825ae5e21dbcc4fea430d071af34
+  sha256: 5fccdb455746493c56e4df91f01ea9e89cdf0d67cfa5f958ca246b9207d20375
 
 build:
   merge_build_host: True  # [win]
