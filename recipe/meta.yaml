@@ -1,4 +1,4 @@
-{% set version = "1.1.4" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/solrium_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/solrium/solrium_{{ version }}.tar.gz
-  sha256: 5fccdb455746493c56e4df91f01ea9e89cdf0d67cfa5f958ca246b9207d20375
+  sha256: 7ec64199497cc69f542fded955b709fc548cf8e2734c9db0f4a99a0ea67ca49b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   script: R CMD INSTALL --build .
   noarch: generic
   rpaths:
@@ -49,16 +49,13 @@ test:
     - "\"%R%\" -e \"library('solrium')\""  # [win]
 
 about:
-  home: https://github.com/ropensci/solrium (devel), https://docs.ropensci.org/solrium/ (user
-    manual)
+  home: https://github.com/ropensci/solrium (devel), https://docs.ropensci.org/solrium/ (user manual)
   license: MIT
-  summary: Provides a set of functions for querying and parsing data from 'Solr' (<https://lucene.apache.org/solr>)
-    'endpoints' (local and remote), including search, 'faceting', 'highlighting', 'stats',
-    and 'more like this'. In addition, some functionality is included for creating,
-    deleting, and updating documents in a 'Solr' 'database'.
+  summary: Provides a set of functions for querying and parsing data from 'Solr' (<https://lucene.apache.org/solr>) 'endpoints' (local and remote), including search, 'faceting', 'highlighting', 'stats', and 'more like this'. In addition, some functionality is included for creating, deleting, and updating documents in a 'Solr'
+    'database'.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
