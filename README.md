@@ -1,11 +1,11 @@
-About r-solrium
-===============
+About r-solrium-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-solrium-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/solrium (devel), https://docs.ropensci.org/solrium/ (user manual)
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-solrium-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides a set of functions for querying and parsing data from 'Solr' (<https://lucene.apache.org/solr>) 'endpoints' (local and remote), including search, 'faceting', 'highlighting', 'stats', and 'more like this'. In addition, some functionality is included for creating, deleting, and updating documents in a 'Solr' 'database'.
 
